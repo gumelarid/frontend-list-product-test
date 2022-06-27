@@ -3,13 +3,13 @@ session_start();
 $totalData = 0;
 if (isset($_GET['keyword'])) {
   $keyword = $_GET['keyword'];
-  $url = 'http://localhost:3002/cari?keyword='.$keyword;
+  $url = 'https://nutech.creativibe.site/cari?keyword='.$keyword;
 }else{
   $page = 1;
-  $url = "http://localhost:3002/all";
+  $url = "https://nutech.creativibe.site/all";
   if (isset($_GET['page'])) {
     $page = $_GET['page'];
-    $url = 'http://localhost:3002/all?page='.$page;
+    $url = 'https://nutech.creativibe.site/all?page='.$page;
   }
 }
 $ch = curl_init();
@@ -147,7 +147,7 @@ if ($result['status'] == 200) {
               <th scope="row"><?php echo $no++ ?></th>
               <td><?php echo $list['product_name'] ?></td>
               <td>
-                <img src="http://localhost:3002/uploads/<?php echo $list['product_picture'] ?>" alt="picture" class="img-thumbnail" style="max-width: 200px;">
+                <img src="https://nutech.creativibe.site/uploads/<?php echo $list['product_picture'] ?>" alt="picture" class="img-thumbnail" style="max-width: 200px;">
               </td>
               <td><?php echo "Rp " . number_format($list['product_price'],2,',','.') ?></td>
               <td><?php echo "Rp " . number_format($list['product_sale'],2,',','.') ?></td>
