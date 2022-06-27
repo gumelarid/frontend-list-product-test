@@ -1,6 +1,6 @@
 <?php
 session_start();
-$url = 'http://localhost:3002/add';
+$url = 'https://nutech.creativibe.site/add';
 
 
 
