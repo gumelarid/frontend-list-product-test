@@ -1,7 +1,7 @@
 <?php
 session_start();
 if (isset($_POST['product_id'])) {
-  $url = 'http://localhost:3002/delete/'.$_POST['product_id'];
+  $url = 'https://nutech.creativibe.site/delete/'.$_POST['product_id'];
   $ch = curl_init();
   curl_setopt_array($ch, array(
       CURLOPT_CUSTOMREQUEST => "DELETE",
