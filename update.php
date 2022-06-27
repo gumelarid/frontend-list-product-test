@@ -1,7 +1,7 @@
 <?php
 session_start();
 if (isset($_POST['product_id'])) {
-    $url = 'http://localhost:3002/update/'.$_POST['product_id'];
+    $url = 'https://nutech.creativibe.site/update/'.$_POST['product_id'];
     if(!$_FILES['product_picture']['error']){
         $upload_file = $_FILES['product_picture'];
     
